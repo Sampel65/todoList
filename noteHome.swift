@@ -10,7 +10,7 @@ import SwiftUI
 struct noteHome :  View {
     
     private var _leadingTitle  : some View{
-        Text("My Note")
+        Text( "My Note")
             .font(.title2)
             .foregroundColor(.black)
     }

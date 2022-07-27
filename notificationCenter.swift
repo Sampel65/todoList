@@ -6,10 +6,61 @@
 //
 
 import SwiftUI
+import UserNotifications
+
+
+class NotificationManager{
+    static let instance = NotificationManager()
+    
+    
+    func requestAuthorization() {
+        
+        let option : UNAuthorizationOptions = [.alert, .sound,.badge ]
+        UNUserNotificationCenter.current().requestAuthorization(options: option) { success, error in
+            if let error = error {
+                print("erroer \(error)")
+            }
+            
+            else{
+                print("success")
+            }
+        }
+    }
+    
+    func scheduleNotification() {
+        
+        let content = UNMutableNotificationContent()
+        content.title = "You have succesfully added task to do today"
+        content.subtitle = "make sure you complete your task for the day"
+        content.sound = .default
+        content.badge = 1
+        
+        
+        // time
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5.0, repeats: false )
+        
+        let request = UNNotificationRequest(
+            identifier: UUID().uuidString,
+            content: content,
+            trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request)
+    }
+}
 
 struct notificationCenter: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            Button("request permisson"){
+                NotificationManager.instance.requestAuthorization()
+            }
+            
+            Button("schedule notification"){
+                NotificationManager.instance.scheduleNotification()
+            }
+        }
     }
 }
 

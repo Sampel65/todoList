@@ -11,6 +11,7 @@
 		CE219ECD2858C99800D131E8 /* noteHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE219ECC2858C99800D131E8 /* noteHome.swift */; };
 		CE219ECF2858CEB600D131E8 /* noteTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE219ECE2858CEB600D131E8 /* noteTypeView.swift */; };
 		CE347451284DDC9B0064BA5D /* listViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE347450284DDC9B0064BA5D /* listViewModel.swift */; };
+		CE6AAF9328606EB2008B1DDE /* notificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6AAF9228606EB2008B1DDE /* notificationCenter.swift */; };
 		CEF00B9B28555203008B1C2E /* noItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF00B9A28555203008B1C2E /* noItemView.swift */; };
 		CEF133872848C8CD00E51BC0 /* todoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF133862848C8CD00E51BC0 /* todoListApp.swift */; };
 		CEF1338B2848C8D200E51BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF1338A2848C8D200E51BC0 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		CE219ECC2858C99800D131E8 /* noteHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteHome.swift; sourceTree = "<group>"; };
 		CE219ECE2858CEB600D131E8 /* noteTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteTypeView.swift; sourceTree = "<group>"; };
 		CE347450284DDC9B0064BA5D /* listViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listViewModel.swift; sourceTree = "<group>"; };
+		CE6AAF9228606EB2008B1DDE /* notificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationCenter.swift; sourceTree = "<group>"; };
 		CEF00B9A28555203008B1C2E /* noItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noItemView.swift; sourceTree = "<group>"; };
 		CEF133832848C8CD00E51BC0 /* todoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF133862848C8CD00E51BC0 /* todoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoListApp.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		CEF1337A2848C8CC00E51BC0 = {
 			isa = PBXGroup;
 			children = (
+				CE6AAF9228606EB2008B1DDE /* notificationCenter.swift */,
 				CE219ECA2858C34D00D131E8 /* noteView.swift */,
 				CE219ECC2858C99800D131E8 /* noteHome.swift */,
 				CE219ECE2858CEB600D131E8 /* noteTypeView.swift */,
@@ -192,6 +195,7 @@
 				CE347451284DDC9B0064BA5D /* listViewModel.swift in Sources */,
 				CE219ECD2858C99800D131E8 /* noteHome.swift in Sources */,
 				CEF1339A2848D16000E51BC0 /* AddView.swift in Sources */,
+				CE6AAF9328606EB2008B1DDE /* notificationCenter.swift in Sources */,
 				CE219ECB2858C34D00D131E8 /* noteView.swift in Sources */,
 				CEF133872848C8CD00E51BC0 /* todoListApp.swift in Sources */,
 				CEF133962848CA2F00E51BC0 /* ListView.swift in Sources */,

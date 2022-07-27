@@ -67,6 +67,6 @@ struct noItemView_Previews: PreviewProvider {
             noItemView()
                 .navigationTitle("Title")
         }
-        .previewInterfaceOrientation(.landscapeLeft)
+        .previewInterfaceOrientation(.portrait)
     }
 }
